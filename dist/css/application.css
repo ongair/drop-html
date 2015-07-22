@@ -46,26 +46,23 @@
  *
  * Copyright (C) 2015
  */
-@font-face {
-  font-family: 'Raleway';
-  src: local('Raleway Regular'), local('Raleway'), url('../../fonts/Raleway-Light.ttf') format('truetype');
-}
+@import url(http://fonts.googleapis.com/css?family=Carme);
 html {
   cursor: default;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Carme', sans-serif;
   margin: 0;
   overflow-x: hidden;
   padding: 0;
 }
 body {
   cursor: default;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Carme', sans-serif;
   margin: 0;
   overflow-x: hidden;
   padding: 0;
 }
 .wf-active body {
-  font-family: 'raleway', sans-serif;
+  font-family: 'Carme', sans-serif;
 }
 a {
   text-decoration: none;
@@ -124,6 +121,9 @@ a {
 }
 .light-grey-bg {
   background: #ededed;
+}
+.transparent {
+  background: transparent;
 }
 .sliding-panel {
   -moz-transition: all 0.4s ease-in-out;
@@ -285,6 +285,9 @@ a {
   overflow-x: hidden;
   overflow-y: scroll;
 }
+.bold {
+  font-weight: bold;
+}
 /**
  *
  * @Author - Eugene Mutai
@@ -301,11 +304,43 @@ a {
  *
  * Copyright (C) 2015
  */
-body {
-  z-index: 300;
-}
 body .icon {
   font-weight: bold;
+}
+.menubody {
+  z-index: 300;
+}
+.menuheader {
+  color: #fefefe;
+  background: transparent;
+  border-bottom: none;
+}
+.menuheader .title,
+.menuheader .icon {
+  color: #fefefe;
+}
+.article-card-list-menu {
+  color: #000000;
+}
+.article-card-list-menu .title,
+.article-card-list-menu .icon {
+  color: #000000;
+}
+.content {
+  z-index: 15;
+}
+header.bar {
+  z-index: 45;
+}
+header.bar .title,
+header.bar .icon {
+  font-weight: bold;
+}
+h3 small {
+  font-size: .5em;
+  line-height: .75 !important;
+  letter-spacing: .75 !important;
+  text-transform: lowercase !important;
 }
 .layer {
   position: fixed;
@@ -335,22 +370,7 @@ body .icon {
   /* IE10+ */
   background: linear-gradient(45deg, #223f99 0%, #ec1c25 100%);
   /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#223f99', endColorstr='#ec1c25', GradientType=1);
   /* IE6-9 fallback on horizontal gradient */
-}
-header.bar {
-  background: transparent;
-  color: #fefefe;
-  border-bottom: none;
-}
-header.bar .title,
-header.bar .icon {
-  color: #fefefe;
-  font-weight: bold;
-}
-.content {
-  background: transparent;
-  z-index: 15;
 }
 .menu-row .col-xs-4 {
   opacity: .5;
@@ -374,9 +394,33 @@ header.bar .icon {
 .menu-row:last-child .col-xs-4 {
   border-bottom: none;
 }
-h3 small {
-  font-size: .5em;
-  line-height: .75 !important;
-  letter-spacing: .75 !important;
-  text-transform: lowercase !important;
+.news-content {
+  color: #232323;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+.news-content .article-card {
+  clear: both;
+  margin-bottom: .5em;
+}
+.news-content .article-card .article {
+  padding: 0;
+  margin: 0;
+}
+.news-content .article-card .article img {
+  width: 95%;
+  height: 150px;
+}
+.news-content .article-card .article h4,
+.news-content .article-card .article h6 {
+  margin: 0.2em 0;
+}
+.news-content .article-card .article small {
+  font-size: 10px;
+  line-height: 2px;
+  margin-bottom: 5%;
+}
+.news-content .article-card .article i {
+  padding: 0 2.5%;
 }

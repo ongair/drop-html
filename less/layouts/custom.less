@@ -15,63 +15,103 @@
  * Copyright (C) 2015
  */
 
- body{
-     z-index: 300;
-      .icon{
-          font-weight: bold;
-      }
- }
-
- .layer{
-     position: fixed;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
- }
-
- .layer.image{
-     z-index: 5;
-     background: url(../images/bg.jpg) no-repeat;
-     background-position: bottom center;
-     background-size: cover;
- }
-
-.layer.gradient{
-     z-index: 10;
-     opacity: 0.75;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#223f99+0,ec1c25+100 */
-    background: #223f99; /* Old browsers */
-    background: -moz-linear-gradient(45deg,  #223f99 0%, #ec1c25 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#223f99), color-stop(100%,#ec1c25)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(45deg,  #223f99 0%,#ec1c25 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(45deg,  #223f99 0%,#ec1c25 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(45deg,  #223f99 0%,#ec1c25 100%); /* IE10+ */
-    background: linear-gradient(45deg,  #223f99 0%,#ec1c25 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#223f99', endColorstr='#ec1c25',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+body {
+    .icon {
+        font-weight: bold;
+    }
 }
 
- header.bar{
-     background: transparent;
-     color: @white;
-     border-bottom: none;
-     .title, .icon{
-         color: @white;
-         font-weight: bold;
-     }
- }
+.menubody{
+    z-index: 300;
+}
 
- .content{
-     background: transparent;
-     z-index: 15
- }
+.menuheader {
+    color: @white;
+    background: transparent;
+    border-bottom: none;
+    .title, .icon {
+        color: @white;
+    }
+}
+
+.article-card-list-menu {
+    color: @black;
+    .title, .icon {
+        color: @black;
+    }
+}
+
+.content {
+    z-index: 15
+}
+
+header.bar {
+    z-index: 45;
+    .title, .icon {
+        font-weight: bold;
+    }
+}
+
+h3 {
+    small {
+        font-size: .5em;
+        line-height: .75 !important;
+        letter-spacing: .75 !important;
+        text-transform: lowercase !important;
+    }
+}
+
+.layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.layer.image {
+    z-index: 5;
+    background: url(../images/bg.jpg) no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+}
+
+.layer.gradient {
+    z-index: 10;
+    opacity: 0.75;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#223f99+0,ec1c25+100 */
+
+    background: #223f99;
+    /* Old browsers */
+
+    background: -moz-linear-gradient(45deg, #223f99 0%, #ec1c25 100%);
+    /* FF3.6+ */
+
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #223f99), color-stop(100%, #ec1c25));
+    /* Chrome,Safari4+ */
+
+    background: -webkit-linear-gradient(45deg, #223f99 0%, #ec1c25 100%);
+    /* Chrome10+,Safari5.1+ */
+
+    background: -o-linear-gradient(45deg, #223f99 0%, #ec1c25 100%);
+    /* Opera 11.10+ */
+
+    background: -ms-linear-gradient(45deg, #223f99 0%, #ec1c25 100%);
+    /* IE10+ */
+
+    background: linear-gradient(45deg, #223f99 0%, #ec1c25 100%);
+    /* W3C */
+
+    // filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#223f99', endColorstr='#ec1c25', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
 
 // Your custom LESS styling for your application goes here
-.menu-row{
-    .col-xs-4{
+.menu-row {
+    .col-xs-4 {
         opacity: .5;
         padding: 5% 1%;
-        span.fa{
+        span.fa {
             color: @white;
             font-size: 3em;
         }
@@ -80,25 +120,47 @@
         }
         border-right: 1px solid @light-grey;
         border-bottom: 1px solid @light-grey;
-        &:hover{
+        &:hover {
             opacity: 1;
         }
-        &:last-child{
+        &:last-child {
             border-right: none
         }
     }
-    &:last-child{
-        .col-xs-4{
+    &:last-child {
+        .col-xs-4 {
             border-bottom: none;
         }
     }
 }
 
-h3{
-    small{
-        font-size: .5em;
-        line-height: .75 !important;
-        letter-spacing: .75 !important;
-        text-transform: lowercase !important;
+.news-content {
+    color: @grey;
+    .article-card {
+        .article {
+            padding: 0;
+            margin: 0;
+            img {
+                width: 95%;
+                height: 150px;
+            }
+            h4,
+            h6 {
+                margin: .2em 0
+            }
+            small {
+                font-size: 10px;
+                line-height: 2px;
+                margin-bottom: 5%;
+            }
+            i {
+                padding: 0 2.5%;
+            }
+        }
+        clear: both;
+        margin-bottom: .5em;
     }
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
 }

@@ -2,58 +2,71 @@ extends layouts/master
 
 block content
 
-    div.layer.gradient
-    div.layer.image
-
-    header.bar.bar-nav
+    header.bar.bar-nav.light-grey-bg.article-card-list-menu
         a(href="javascript:;").icon.icon-bars.pull-left
         a(href="javascript:;").icon.icon-search.pull-right
-        
-        //- h1.title Drop Link
-        
-    div.content.text-center
+
+        h1.title Welcome Chebet
+
+    div.content.news-content.light-grey-bg.space
+    
         // App content here
-        .col-xs-12.space-lg
-            h3.white.uppercase Make Drop Your Own
-            small.white Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        .article-card.col-xs-12
+            h3.bold.space-xs Popular Drops
+            .col-xs-6.article.card-image
+                img.img-responsive(src="http://lorempixel.com/300/300/")
+
+            .col-xs-6.article.card-content
+                h6.bold.uppercase business
+                h4 Tristan Walker: The invisble man
+                small Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...
+                br    
+                small.bold
+                    i.fa.fa-heart.red&nbsp; 251K
+                    i.fa.fa-chat.green&nbsp; 51K
+                    i.fa.fa-share-alt.blue&nbsp; 51K
+            
+        // App content here
+        .article-card.col-xs-12
+            .col-xs-6.article.card-content
+                h6.bold.uppercase business
+                h4 Tristan Walker: The invisble man
+                small Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...
+                br    
+                small.bold
+                    i.fa.fa-heart.red&nbsp; 251K
+                    i.fa.fa-chat.green&nbsp; 51K
+                    i.fa.fa-share-alt.blue&nbsp; 51K
+                    
+            .col-xs-6.article.card-image
+                img.img-responsive(src="http://lorempixel.com/300/300/")
         
-        .row.menu-map
-            div.col-xs-12.text-center.menu-row
-                // row for the app menu
-                .row
-                    div.col-xs-4
-                        span.fa.fa-futbol-o
-                        p.lead Sports
-                    div.col-xs-4
-                        span.fa.fa-briefcase
-                        p.lead Politics
-                    div.col-xs-4
-                        span.fa.fa-map-marker
-                        p.lead Travel
-                        
-            div.col-xs-12.text-center.menu-row
-                // row for the app menu
-                .row
-                    div.col-xs-4
-                        span.fa.fa-tree
-                        p.lead Nature
-                    div.col-xs-4
-                        span.fa.fa-cloud
-                        p.lead Weather
-                    div.col-xs-4
-                        span.fa.fa-user-secret
-                        p.lead Fashion
-                        
-            div.col-xs-12.text-center.menu-row
-                // row for the app menu
-                .row
-                    div.col-xs-4
-                        span.fa.fa-space-shuttle
-                        p.lead Science
-                    div.col-xs-4
-                        span.fa.fa-puzzle-piece
-                        p.lead Entertainment
-                    div.col-xs-4
-                        span.fa.fa-venus-mars
-                        p.lead Culture
-                
+        // App content here
+        .article-card.col-xs-12
+            .col-xs-6.article.card-image
+                img.img-responsive(src="http://lorempixel.com/300/300/")
+
+            .col-xs-6.article.card-content
+                h6.bold.uppercase business
+                h4 Tristan Walker: The invisble man
+                small Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...
+                br    
+                small.bold
+                    i.fa.fa-heart.red&nbsp; 251K
+                    i.fa.fa-chat.green&nbsp; 51K
+                    i.fa.fa-share-alt.blue&nbsp; 51K
+        
+        // App content here
+        .article-card.col-xs-12
+            .col-xs-6.article.card-content
+                h6.bold.uppercase business
+                h4 Tristan Walker: The invisble man
+                small Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...
+                br    
+                small.bold
+                    i.fa.fa-heart.red&nbsp; 251K
+                    i.fa.fa-chat.green&nbsp; 51K
+                    i.fa.fa-share-alt.blue&nbsp; 51K
+                    
+            .col-xs-6.article.card-image
+                img.img-responsive(src="http://lorempixel.com/300/300/")

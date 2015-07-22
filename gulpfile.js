@@ -31,7 +31,7 @@ gulp.task('bs-reload', function() {
 gulp.task('templates', function() {
     var LOCAL_SETTINGS = {};
 
-    gulp.src('./jade/*.jade')
+    gulp.src('./jade/**/*.jade')
         .pipe(jade({
             locals: LOCAL_SETTINGS
         }))

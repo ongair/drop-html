@@ -8,25 +8,17 @@ application-engine(description="all the application's JS files fall here")
     script(type="text/javascript" src="./third_party/jquery/dist/jquery.min.js")
 
     //- Angularjs MVC, MVVM framework
-    script(type="text/javascript" src="./third_party/angularjs/angular.min.js")
-    //- script(type="text/javascript" src="./third_party/angularjs/angular-resource.min.js")
-
-    //- Knockout MVVM framework
-    //- script(type="text/javascript" src="./third_party/knockout-3.0.0.js")
-    //- script(type="text/javascript" src="./third_party/validation.js")
-
-    // For cookies and touch support
-    script(type="text/javascript" src="./third_party/jquery-cookie/jquery.cookie.js")
+    //- script(type="text/javascript" src="./third_party/angularjs/angular.min.js")
+    
+    // For touch events
     script(type="text/javascript" src="./third_party/hammerjs/hammer.min.js")
-
-    // Time management
-    script(type="text/javascript" src="./third_party/moment/min/moment.min.js")
 
     // Your app functions script
     script(type="text/javascript" src="./dist/js/application.js")
     script.
         //on document ready, as soon as it begins to load
-        app.initialize();
+        var app = new Application();
+        var appInstance = app.initialize();
 
         // Google Analytics: change UA-XXXXX-X to be your site's ID.
         (function(b, o, i, l, e, r) {

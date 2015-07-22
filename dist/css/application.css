@@ -368,6 +368,9 @@ header.bar .icon {
 .menu-row .col-xs-4:hover {
   opacity: 1;
 }
+.menu-row .col-xs-4:last-child {
+  border-right: none;
+}
 .menu-row:last-child .col-xs-4 {
   border-bottom: none;
 }

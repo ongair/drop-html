@@ -381,6 +381,55 @@ h3 small {
   /* W3C */
   /* IE6-9 fallback on horizontal gradient */
 }
+.app-logo {
+  width: 70%;
+  margin: auto;
+}
+.app-logo img {
+  width: 100%;
+}
+.registration {
+  width: 80%;
+  margin: 0 10% 1em;
+}
+.signup {
+  padding-top: 5%;
+}
+.signup i.fa {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.signup .option {
+  padding: .5em 1em .25em;
+  margin-bottom: 1em;
+}
+.signup .facebook {
+  background: #30358f;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#30358f+0,000000+100&amp;1+0,0+100 */
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #30358f), color-stop(100%, rgba(0, 0, 0, 0)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #30358f 0%, rgba(0, 0, 0, 0) 100%);
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: linear-gradient(to right, #30358f 0%, rgba(0, 0, 0, 0) 100%);
+  /* W3C */
+}
+.signup .whatsapp {
+  background: #3db349;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3db349+0,000000+100&amp;1+0,0+100 */
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #3db349), color-stop(100%, rgba(0, 0, 0, 0)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #3db349 0%, rgba(0, 0, 0, 0) 100%);
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: linear-gradient(to right, #3db349 0%, rgba(0, 0, 0, 0) 100%);
+  /* W3C */
+  /* IE6-9 */
+}
 .menu-row .col-xs-4 {
   opacity: .5;
   padding: 5% 1%;

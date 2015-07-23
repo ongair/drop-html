@@ -303,8 +303,9 @@ body .icon {
 body .transparent {
   background: transparent;
 }
-.black-icons .icon {
-  color: #000000;
+.black-icons .icon,
+.grey-icons .icon {
+  color: #232323;
 }
 .menu-header {
   color: #fefefe;
@@ -325,15 +326,30 @@ body .transparent {
   color: #232323;
   background: transparent;
 }
-.article-card-list-menu {
+.articles-header {
   color: #000000;
 }
-.article-card-list-menu .title,
-.article-card-list-menu .icon {
+.articles-header .title,
+.articles-header .icon {
   color: #000000;
+}
+.app-logo {
+  width: 70%;
+  margin: auto;
+}
+.app-logo img {
+  width: 100%;
 }
 .content {
   z-index: 15;
+}
+.content .introduction {
+  width: 80%;
+  margin: 0 10%;
+}
+.content .introduction small {
+  font-size: 10px;
+  line-height: 10px;
 }
 .content.drop-article {
   padding: 0;
@@ -381,16 +397,13 @@ h3 small {
   /* W3C */
   /* IE6-9 fallback on horizontal gradient */
 }
-.app-logo {
-  width: 70%;
-  margin: auto;
-}
-.app-logo img {
-  width: 100%;
-}
 .registration {
   width: 80%;
   margin: 0 10% 1em;
+}
+.registration h2 {
+  padding-top: 0;
+  margin-top: 0;
 }
 .signup {
   padding-top: 5%;
@@ -517,6 +530,7 @@ h3 small {
   margin: 0;
 }
 .search-card .search-body small a {
+  font-size: .8em;
   color: #8e44ad;
 }
 .search-card .search-body p {

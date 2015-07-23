@@ -1,0 +1,37 @@
+extends layouts/master
+
+block content
+
+    header.bar.bar-nav.drops-header
+        a(href="menu.html").icon.icon-bars.pull-left
+        a(href="search.html").icon.icon-search.pull-right
+
+        h1.title.transparent.grey Drops on ISIS
+
+    div.content.drops.transparent.text-left.grey
+
+        // The article image
+        div.article-image
+            img.img-responsive(src="./dist/images/bg1.jpg")
+
+        div.article-drops
+            h2.white Drops on ISIS
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            //- p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+            div.sharing-icons.text-center
+                small.bold
+                    i.fa.fa-heart.red&nbsp; 251K
+                    i.fa.fa-comments.green&nbsp; 51K
+                    i.fa.fa-share-alt.blue&nbsp; 51K
+
+                div.slider-icons.text-center
+                    i.fa.fa-circle.black.border-white.active&nbsp;
+                    i.fa.fa-circle.black.border-white&nbsp;
+                    i.fa.fa-circle.black.border-white&nbsp;
+                    i.fa.fa-circle.black.border-white&nbsp;
+                    i.fa.fa-circle.black.border-white&nbsp;
+
+            p.white.uppercase.text-center
+                | SWIPE TO EXPLORE

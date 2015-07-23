@@ -2,71 +2,37 @@ extends layouts/master
 
 block content
 
-    header.bar.bar-nav.light-grey-bg.article-card-list-menu
-        a(href="javascript:;").icon.icon-bars.pull-left
-        a(href="javascript:;").icon.icon-search.pull-right
+    div.layer.gradient
+    div.layer.image
 
-        h1.title Welcome Chebet
+    header.bar.bar-nav.menu-header
+        a(href="menu.html" data-transition="slide-in").icon.icon-bars.pull-left
+        a(href="search.html" data-transition="slide-in").icon.icon-search.pull-right
 
-    div.content.news-content.light-grey-bg.space
+        //- h1.title Drop Link
 
-        // App content here
-        .article-card.col-xs-12
-            h3.bold.space-xs Popular Drops
-            .col-xs-6.article.card-image
-                img.img-responsive(src="http://lorempixel.com/300/300/")
+    div.content.transparent.text-center.grey
 
-            .col-xs-6.article.card-content
-                h6.bold.uppercase business
-                h4 Tristan Walker: The invisble man
-                small Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...
-                br
-                small.bold
-                    i.fa.fa-heart.red&nbsp; 251K
-                    i.fa.fa-comments.green&nbsp; 51K
-                    i.fa.fa-share-alt.blue&nbsp; 51K
+        div.app-logo
+            img.img-responsive(src="./dist/images/logo.png")
 
         // App content here
-        .article-card.col-xs-12
-            .col-xs-6.article.card-content
-                h6.bold.uppercase business
-                h4 Tristan Walker: The invisble man
-                small Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...
-                br
-                small.bold
-                    i.fa.fa-heart.red&nbsp; 251K
-                    i.fa.fa-comments.green&nbsp; 51K
-                    i.fa.fa-share-alt.blue&nbsp; 51K
+        .col-xs-12.space-lg.registration
+             // The article image
 
-            .col-xs-6.article.card-image
-                img.img-responsive(src="http://lorempixel.com/300/300/")
+            div.info
+                h2.white.uppercase Register
+                small.white After registration you can customise what drops you'd want to recieve. Only follow stories that matter most to you.
 
-        // App content here
-        .article-card.col-xs-12
-            .col-xs-6.article.card-image
-                img.img-responsive(src="http://lorempixel.com/300/300/")
+        .signup
+            .col-xs-12.option.facebook.text-left
+                a(href="menu.html")
+                    h4.white.uppercase
+                        i.fa.fa-facebook.fa-1x&nbsp;
+                        | Facebook
 
-            .col-xs-6.article.card-content
-                h6.bold.uppercase business
-                h4 Tristan Walker: The invisble man
-                small Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...
-                br
-                small.bold
-                    i.fa.fa-heart.red&nbsp; 251K
-                    i.fa.fa-comments.green&nbsp; 51K
-                    i.fa.fa-share-alt.blue&nbsp; 51K
-
-        // App content here
-        .article-card.col-xs-12
-            .col-xs-6.article.card-content
-                h6.bold.uppercase business
-                h4 Tristan Walker: The invisble man
-                small Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...
-                br
-                small.bold
-                    i.fa.fa-heart.red&nbsp; 251K
-                    i.fa.fa-comments.green&nbsp; 51K
-                    i.fa.fa-share-alt.blue&nbsp; 51K
-
-            .col-xs-6.article.card-image
-                img.img-responsive(src="http://lorempixel.com/300/300/")
+            .col-xs-12.option.whatsapp.text-left
+                a(href="menu.html")
+                    h4.white.uppercase
+                        i.fa.fa-whatsapp.fa-1x&nbsp;
+                        | WhatsApp
